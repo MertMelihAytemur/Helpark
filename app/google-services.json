@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "913682647655",
+    "project_id": "helpark",
+    "storage_bucket": "helpark.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913682647655:android:9fada5c4c7c6a2ebe3e2c2",
+        "android_client_info": {
+          "package_name": "xyz.scoca.helpark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913682647655-f5j5f6187m2s5b6u4391nrobf77c0lk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.scoca.helpark",
+            "certificate_hash": "54195bf0d7125ae2109a3e2924942a66bd2db15f"
+          }
+        },
+        {
+          "client_id": "913682647655-c7l212ujat3d0paloe0jrf5frgrg4kq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH2vULNdCMn8zzNYPPBchR0SmB7rD09Hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913682647655-c7l212ujat3d0paloe0jrf5frgrg4kq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

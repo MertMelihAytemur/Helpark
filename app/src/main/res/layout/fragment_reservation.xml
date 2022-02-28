@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".ui.home.ReservationFragment">
+
+    <TextView
+        android:id="@+id/tvMakeReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="Reservation"
+        android:textColor="@color/gable_green"
+        android:textSize="29sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gable_green"
+        app:layout_constraintTop_toBottomOf="@id/tvMakeReservation"/>
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        android:layout_marginTop="20dp"
+        android:textSize="21sp"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_searchview"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTime">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_weight="1"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Detail"
+        android:textSize="21sp"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintTop_toBottomOf="@id/llDateTime"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDetail"
+        android:background="@color/gable_green"/>
+
+    <TextView
+        android:id="@+id/tvDetailParkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Park Name : "
+        android:fontFamily="@font/allerta"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvReservationParkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Kadıköy İspark"
+        android:fontFamily="@font/allerta"
+        android:textColor="@color/gable_green"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        app:layout_constraintStart_toEndOf="@id/tvDetailParkName"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvParkFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Fee : $"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailParkName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvReservationParkFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20TL"
+        android:fontFamily="@font/allerta"
+        android:textColor="@color/gable_green"
+        app:layout_constraintTop_toBottomOf="@id/tvReservationParkName"
+        app:layout_constraintStart_toEndOf="@id/tvParkFee"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvReservationParkFee"
+        android:layout_marginTop="10dp"
+        android:background="@color/gable_green"/>
+
+    <Button
+        android:id="@+id/btnReservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvReservationParkFee"
+        android:layout_marginTop="30dp"
+        android:text="Make a Reservation"
+        android:fontFamily="@font/allerta"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

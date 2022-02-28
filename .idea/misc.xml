@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/bg_bottom_sheet.xml" value="0.225" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/bg_searchview.xml" value="0.272" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/car_density_green.xml" value="0.232" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/car_density_orange.xml" value="0.232" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/car_density_red.xml" value="0.152" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/ic_sync.xml" value="0.185" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable-v24/ic_sync_white.xml" value="0.232" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/about_helpark.xml" value="0.2785" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/agnel_down.xml" value="0.2065" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/angel_down.xml" value="0.2065" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/angle_up.xml" value="0.2065" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/feedback_24.xml" value="0.219" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/logout_24.xml" value="0.263" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/map_marker_24.xml" value="0.272" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/marker_24.xml" value="0.2075" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/receipt_24.xml" value="0.263" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/refresh_24.xml" value="0.263" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/trash_24.xml" value="0.297" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/drawable/user_24.xml" value="0.263" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/activity_main.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_feedback.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_history.xml" value="0.18" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_on_boarding_first.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_on_boarding_second.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_reservation.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_view_pager.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/fragment_view_pager_fagment.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/item_bottom_sheet.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/nav_header.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/park_item.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/layout/reservation_item.xml" value="0.25" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/menu/nav_menu.xml" value="0.3055555555555556" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/menu/nav_menu_guest.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/mertm/Desktop/All/SoftwareEngineering/Android/AndroidProjects/Helpark/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.263" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
