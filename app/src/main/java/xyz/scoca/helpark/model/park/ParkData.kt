@@ -1,8 +1,11 @@
 package xyz.scoca.helpark.model.park
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class ParkData(
     @SerializedName("park_active_hours")
     val parkActiveHours: String?=null,
@@ -24,4 +27,4 @@ data class ParkData(
     val parkPoint: String?=null,
     @SerializedName("park_id")
     val parkId: String?=null
-)
+) : Parcelable

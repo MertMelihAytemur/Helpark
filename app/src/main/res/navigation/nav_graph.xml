@@ -9,7 +9,7 @@
         android:id="@+id/splashScreenFragment"
         android:name="xyz.scoca.helpark.ui.splash.SplashScreenFragment"
         android:label="fragment_splash_screen"
-        tools:layout="@layout/fragment_splash_screen" >
+        tools:layout="@layout/fragment_splash_screen">
 
         <action
             android:id="@+id/action_splashScreenFragment_to_homeFragment"
@@ -26,7 +26,7 @@
         android:id="@+id/loginFragment"
         android:name="xyz.scoca.helpark.ui.auth.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
@@ -40,10 +40,15 @@
         android:id="@+id/registerFragment"
         android:name="xyz.scoca.helpark.ui.auth.register.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
+        tools:layout="@layout/fragment_register">
         <action
             android:id="@+id/action_registerFragment_to_homeFragment"
             app:destination="@id/homeFragment"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
             app:popUpTo="@id/registerFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -51,10 +56,12 @@
         android:id="@+id/homeFragment"
         android:name="xyz.scoca.helpark.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -72,7 +79,7 @@
         android:id="@+id/profileFragment"
         android:name="xyz.scoca.helpark.ui.home.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_profileFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
@@ -81,7 +88,7 @@
         android:id="@+id/feedbackFragment"
         android:name="xyz.scoca.helpark.ui.home.FeedbackFragment"
         android:label="fragment_feedback"
-        tools:layout="@layout/fragment_feedback" >
+        tools:layout="@layout/fragment_feedback">
         <action
             android:id="@+id/action_feedbackFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -95,7 +102,7 @@
         android:id="@+id/viewPagerFragment"
         android:name="xyz.scoca.helpark.ui.onboarding.viewpager.ViewPagerFragment"
         android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" >
+        tools:layout="@layout/fragment_view_pager">
 
         <action
             android:id="@+id/action_viewPagerFragment_to_loginFragment"
@@ -107,13 +114,12 @@
         android:id="@+id/reservationFragment"
         android:name="xyz.scoca.helpark.ui.home.ReservationFragment"
         android:label="fragment_reservation"
-        tools:layout="@layout/fragment_reservation" >
-        <argument
-            android:name="parkName"
-            app:argType="string"
-            />
+        tools:layout="@layout/fragment_reservation">
         <action
             android:id="@+id/action_reservationFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="parkName"
+            app:argType="string" />
     </fragment>
 </navigation>

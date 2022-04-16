@@ -2,6 +2,9 @@ package xyz.scoca.helpark
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
 import xyz.scoca.helpark.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

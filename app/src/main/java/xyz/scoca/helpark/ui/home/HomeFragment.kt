@@ -22,6 +22,7 @@ import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
@@ -96,6 +97,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
 
         setNavigationDrawer()
         isUserLoggedIn()
+        setRecyclerViewSnapHelper()
 
         val mapFragment =
             childFragmentManager.findFragmentById(R.id.fParkMapLocation) as SupportMapFragment?
@@ -243,7 +245,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
 
                 //Move camera
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13.5f))
-                findNearbyPark("parking")
+                findNearbyPark(Common.PARK_ID)
             }
         }
     }
@@ -315,6 +317,12 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                 findNavController().navigate(action)
             }
         })
+    }
+
+    private fun setRecyclerViewSnapHelper(){
+        val snapHelper = LinearSnapHelper()
+        snapHelper.attachToRecyclerView(binding.rvParkData)
+        binding.rvParkData.isNestedScrollingEnabled = false
     }
 
     private fun getParkData() {
@@ -458,7 +466,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
                 mMap.addMarker(markerOptions)
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15f))
 
-                findNearbyPark("parking")
+                findNearbyPark(Common.PARK_ID)
                 return false
             }
 
@@ -473,6 +481,4 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
         ClientPreferences(requireContext()).clearSharedPref()
         findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
     }
-
-
 }

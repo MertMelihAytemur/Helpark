@@ -13,7 +13,7 @@ import xyz.scoca.helpark.data.local.ClientPreferences
 import xyz.scoca.helpark.databinding.FragmentRegisterBinding
 import xyz.scoca.helpark.model.status.OnError
 import xyz.scoca.helpark.model.status.OnSuccess
-import xyz.scoca.helpark.util.extension.snack
+import xyz.scoca.helpark.util.extension.    snack
 
 class RegisterFragment : Fragment() {
     private lateinit var binding: FragmentRegisterBinding
@@ -35,6 +35,10 @@ class RegisterFragment : Fragment() {
         binding.btnRegister.setOnClickListener {
             validateUser()
         }
+
+        binding.tvAlreadyHaveAnAccount.setOnClickListener {
+            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        }
         return binding.root
     }
 
@@ -49,7 +53,7 @@ class RegisterFragment : Fragment() {
                 }
                 is OnError<*> -> {
                     binding.progressBar.visibility = View.INVISIBLE
-                    snack(requireView(),status.msg.toString())
+                    snack(requireView(), status.msg.toString())
                 }
             }
         }
@@ -68,11 +72,7 @@ class RegisterFragment : Fragment() {
         } else if (TextUtils.isEmpty(password) || TextUtils.isEmpty(repassword)) {
             binding.etRegisterPassword.error = "Enter password"
         } else if (password != repassword) {
-            snack(requireView(),"Passwords not match. Try Again.")
-        } else {
-            binding.progressBar.visibility = View.VISIBLE
-            viewModel.register(name, email, password)
+            snack(requireView(), "Passwords not match. Try again")
         }
     }
-
 }
